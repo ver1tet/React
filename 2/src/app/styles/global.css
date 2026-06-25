@@ -1,0 +1,89 @@
+/* ===== Global Styles — HW2 Counter + Switch ===== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+  --bg-deep:        #07090f;
+  --bg-surface:     #0e1117;
+  --bg-card:        rgba(255, 255, 255, 0.045);
+  --bg-card-hover:  rgba(255, 255, 255, 0.08);
+  --border:         rgba(255, 255, 255, 0.08);
+  --border-glow:    rgba(99, 102, 241, 0.5);
+
+  /* Accent */
+  --accent:         #6366f1;
+  --accent-light:   #a78bfa;
+  --accent-cyan:    #22d3ee;
+  --danger:         #f87171;
+  --danger-glow:    rgba(248, 113, 113, 0.35);
+  --success:        #34d399;
+  --success-glow:   rgba(52, 211, 153, 0.35);
+
+  /* Text */
+  --text-primary:   #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted:     #475569;
+
+  /* Typography */
+  --font-ui:     'Inter', system-ui, sans-serif;
+  --font-mono:   'Orbitron', monospace;
+
+  /* Shadows */
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.55);
+  --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.2);
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-full: 9999px;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: var(--font-ui);
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Animated radial background */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 55% at 15% 10%, rgba(99,102,241,.13) 0%, transparent 60%),
+    radial-gradient(ellipse 55% 45% at 85% 85%, rgba(139,92,246,.10) 0%, transparent 55%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Dot grid */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.025) 1px, transparent 0);
+  background-size: 36px 36px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg-surface); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }

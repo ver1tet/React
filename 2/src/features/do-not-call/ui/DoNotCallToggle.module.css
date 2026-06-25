@@ -1,0 +1,64 @@
+/* ===== DoNotCallToggle Styles ===== */
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(16px);
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.containerActive {
+  background: rgba(248, 113, 113, 0.07);
+  border-color: rgba(248, 113, 113, 0.35);
+  box-shadow: 0 0 28px rgba(248, 113, 113, 0.15);
+}
+
+/* ── Phone Icon ── */
+.phoneIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid var(--border);
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  transition: color 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+.phoneIconActive {
+  color: var(--danger);
+  background: rgba(248, 113, 113, 0.12);
+  border-color: rgba(248, 113, 113, 0.3);
+}
+
+/* ── Content ── */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+/* ── Status text ── */
+.status {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  transition: color 0.3s ease;
+  margin-top: 2px;
+}
+
+.statusInactive {
+  color: var(--text-muted);
+}
+
+.statusActive {
+  color: var(--danger);
+}

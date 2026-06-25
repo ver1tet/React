@@ -1,0 +1,99 @@
+/* ===== Switch (Toggle) Component Styles ===== */
+
+/* Hide native checkbox visually but keep it accessible */
+.input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+/* Wrapper — the clickable label */
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  outline: none;
+}
+
+.wrapper:focus-within .track {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 3px;
+}
+
+.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ── Track ── */
+.track {
+  position: relative;
+  width: 56px;
+  height: 30px;
+  border-radius: var(--radius-full);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+}
+
+.trackOff {
+  background: rgba(255, 255, 255, 0.10);
+  border: 1.5px solid rgba(255, 255, 255, 0.12);
+  box-shadow: none;
+}
+
+.trackOn {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  border: 1.5px solid transparent;
+  box-shadow: 0 0 18px rgba(99, 102, 241, 0.55), inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+/* ── Thumb ── */
+.thumb {
+  position: absolute;
+  top: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thumbOff {
+  left: 3px;
+  transform: translateX(0);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.thumbOn {
+  left: 3px;
+  transform: translateX(26px);
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.6);
+}
+
+/* ── Label text ── */
+.label {
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  line-height: 1.2;
+}
+
+.labelOff {
+  color: var(--text-secondary);
+}
+
+.labelOn {
+  color: var(--text-primary);
+}
