@@ -1,0 +1,111 @@
+/* ===== GLOBAL STYLES — React Clock App ===== */
+
+/* ---------- Fonts & Reset ---------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color Palette */
+  --color-bg-deep:       #060812;
+  --color-bg-surface:    #0d1117;
+  --color-bg-card:       rgba(255, 255, 255, 0.04);
+  --color-bg-card-hover: rgba(255, 255, 255, 0.08);
+  --color-border:        rgba(255, 255, 255, 0.08);
+  --color-border-glow:   rgba(99, 102, 241, 0.4);
+
+  /* Accent */
+  --color-accent-1: #6366f1;  /* Indigo */
+  --color-accent-2: #8b5cf6;  /* Violet */
+  --color-accent-3: #a78bfa;  /* Light violet */
+  --color-accent-4: #c4b5fd;  /* Pale violet */
+
+  /* Secondary accents */
+  --color-cyan:   #22d3ee;
+  --color-pink:   #f472b6;
+  --color-amber:  #fbbf24;
+
+  /* Text */
+  --color-text-primary:   #f1f5f9;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted:     #475569;
+
+  /* Shadows */
+  --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.25);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-text: 0 0 20px rgba(167, 139, 250, 0.6);
+
+  /* Typography */
+  --font-ui:      'Inter', system-ui, sans-serif;
+  --font-clock:   'Orbitron', monospace;
+
+  /* Spacing */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  40px;
+  --space-2xl: 64px;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-ui);
+  background-color: var(--color-bg-deep);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+/* ---------- Animated Background ---------- */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(99, 102, 241, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 90%, rgba(139, 92, 246, 0.10) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 50% 50%, rgba(34, 211, 238, 0.04) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.03) 1px, transparent 0);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent-1);
+  border-radius: 3px;
+}

@@ -1,0 +1,13 @@
+/// <reference types="vite/client" />
+
+// CSS Modules
+declare module '*.module.css' {
+  const classes: { readonly [key: string]: string }
+  export default classes
+}
+
+// Plain CSS (side-effect imports)
+declare module '*.css' {
+  const styles: Record<string, string>
+  export default styles
+}
