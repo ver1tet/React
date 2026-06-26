@@ -1,0 +1,5 @@
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task2_Monitor\obj\Debug\net8.0-windows\Exam_Task2_Monitor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task2_Monitor\obj\Debug\net8.0-windows\Exam_Task2_Monitor.AssemblyInfoInputs.cache
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task2_Monitor\obj\Debug\net8.0-windows\Exam_Task2_Monitor.AssemblyInfo.cs
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task2_Monitor\obj\Debug\net8.0-windows\Exam_Task2_Monitor.csproj.CoreCompileInputs.cache
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task2_Monitor\obj\Debug\net8.0-windows\Exam_Task2_Monitor.sourcelink.json

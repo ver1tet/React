@@ -1,0 +1,15 @@
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task1_WordSearch\bin\Debug\net8.0-windows\Exam_Task1_WordSearch.exe
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task1_WordSearch\bin\Debug\net8.0-windows\Exam_Task1_WordSearch.deps.json
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task1_WordSearch\bin\Debug\net8.0-windows\Exam_Task1_WordSearch.runtimeconfig.json
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task1_WordSearch\bin\Debug\net8.0-windows\Exam_Task1_WordSearch.dll
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task1_WordSearch\bin\Debug\net8.0-windows\Exam_Task1_WordSearch.pdb
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task1_WordSearch\obj\Debug\net8.0-windows\Exam_Task1_WordSearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task1_WordSearch\obj\Debug\net8.0-windows\Exam_Task1_WordSearch.AssemblyInfoInputs.cache
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task1_WordSearch\obj\Debug\net8.0-windows\Exam_Task1_WordSearch.AssemblyInfo.cs
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task1_WordSearch\obj\Debug\net8.0-windows\Exam_Task1_WordSearch.csproj.CoreCompileInputs.cache
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task1_WordSearch\obj\Debug\net8.0-windows\Exam_Task1_WordSearch.sourcelink.json
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task1_WordSearch\obj\Debug\net8.0-windows\Exam_Task1_WordSearch.dll
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task1_WordSearch\obj\Debug\net8.0-windows\refint\Exam_Task1_WordSearch.dll
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task1_WordSearch\obj\Debug\net8.0-windows\Exam_Task1_WordSearch.pdb
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task1_WordSearch\obj\Debug\net8.0-windows\Exam_Task1_WordSearch.genruntimeconfig.cache
+C:\Users\Admin\.gemini\antigravity\scratch\CSharp_Tasks\Exam_Task1_WordSearch\obj\Debug\net8.0-windows\ref\Exam_Task1_WordSearch.dll
