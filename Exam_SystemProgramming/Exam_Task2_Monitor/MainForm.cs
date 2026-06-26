@@ -215,6 +215,16 @@ namespace Exam_Task2_Monitor
                 UnhookWindowsHookEx(_kbdHookID);
         }
 
+        private IntPtr SetHook(int idHook, Delegate proc)
+        {
+            using (Process curProcess = Process.GetCurrentProcess())
+            using (ProcessModule curModule = curProcess.MainModule)
+            {
+                return SetWindowsHookEx(idHook, Marshal.GetFunctionPointerForDelegate(proc),
+                    GetModuleHandle(curModule.ModuleName), 0);
+            }
+        }
+
         private delegate IntPtr LowLevelKeyboardProc(int nCode, IntPtr wParam, IntPtr lParam);
 
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
