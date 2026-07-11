@@ -1,9 +1,9 @@
 export interface IProductBrief {
-  id: string; // group number - item number
+  id: string;
   title: string;
   price: number;
-  description?: string; // optional
-  imageUrl?: string; // optional
+  description?: string;
+  imageUrl?: string;
 }
 
 export const mockProducts: IProductBrief[] = [

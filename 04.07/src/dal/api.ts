@@ -1,3 +1,14 @@
+export interface IProductGroup {
+  id: string;
+  name: string;
+  description: string;
+}
+
+export const mockGroups: IProductGroup[] = [
+  { id: 'g1', name: 'Електроніка', description: 'Сучасні гаджети та пристрої' },
+  { id: 'g2', name: 'Побутова техніка', description: 'Техніка для дому та кухні' },
+];
+
 export interface IProductBrief {
   id: string;
   title: string;
